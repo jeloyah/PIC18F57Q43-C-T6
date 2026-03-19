@@ -9,13 +9,13 @@ void PortA_Initialize(void)
     LATA = 0x00;
     
     /* RA1 as analog input; RA7:RA2, RA0 as digital I/O */
-    ANSELA = 0x02;
+   
     
     /* Disable Rpull-ups */
     WPUA = 0x00;
         
     /* RA1 as input; RA7:RA3, RA0 as outputs */
-    TRISA = 0x02;
+
 }
 
 /* PortB initialization */
