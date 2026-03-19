@@ -29,24 +29,20 @@ void main(void) {
     PortF_Initialize();
     
     /* Config ADC */
-    ADC_Initialize();
+
     
     /* infinite loop */
     while(1)
     {
      /* Start ADC conversion */
-     ADC_Start();
+  
         
      /* Wait for Go = 0 */
-	while (ADC_conversionNotComplete)
+
         
          ;
 
-     /* Write ADC result (low) to RD7:RD6 */
-	 LATC = ADRESL;
 
-	 /* Write ADC result (high) to RC7:RC0 */
-	 LATD = ADRESH;
          
      } /* while */
             
