@@ -66,7 +66,8 @@ void ADC_Initialize(void);
 
 void ADC_Start(void);
 
-#define ADC_conversionNotComplete (ADCON0 & 0x01) != 0x00
+/* (ADCON0 & 0x01) != 0x00 */
+
 #ifdef	__cplusplus
 extern "C" {
 #endif /* __cplusplus */
